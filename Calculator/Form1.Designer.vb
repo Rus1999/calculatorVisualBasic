@@ -76,6 +76,37 @@ Partial Class Form1
         Me.RandomBG = New System.Windows.Forms.Label()
         Me.RandomBG2 = New System.Windows.Forms.Label()
         Me.NormalOperationBG2 = New System.Windows.Forms.Label()
+        Me.FormatBG2 = New System.Windows.Forms.Label()
+        Me.FormatBG1 = New System.Windows.Forms.Label()
+        Me.FormatBG3 = New System.Windows.Forms.Label()
+        Me.FormatLabel = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.FormatNumInput = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.gnum = New System.Windows.Forms.Label()
+        Me.pnum = New System.Windows.Forms.Label()
+        Me.cnum = New System.Windows.Forms.Label()
+        Me.snum = New System.Windows.Forms.Label()
+        Me.fnum = New System.Windows.Forms.Label()
+        Me.FormatNum = New System.Windows.Forms.Button()
+        Me.ClearNum = New System.Windows.Forms.Button()
+        Me.DateLabel = New System.Windows.Forms.Label()
+        Me.ldate = New System.Windows.Forms.Label()
+        Me.sdate = New System.Windows.Forms.Label()
+        Me.ltime = New System.Windows.Forms.Label()
+        Me.stime = New System.Windows.Forms.Label()
+        Me.gdate = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.DisplayDate = New System.Windows.Forms.Button()
+        Me.ClearDate = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Number1
@@ -105,15 +136,16 @@ Partial Class Form1
         Me.Number2.Location = New System.Drawing.Point(360, 45)
         Me.Number2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Number2.Name = "Number2"
-        Me.Number2.Size = New System.Drawing.Size(268, 39)
+        Me.Number2.Size = New System.Drawing.Size(258, 39)
         Me.Number2.TabIndex = 2
         Me.Number2.Text = "number"
         '
         'Equalation1
         '
         Me.Equalation1.AutoSize = True
-        Me.Equalation1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Equalation1.BackColor = System.Drawing.Color.Brown
         Me.Equalation1.Font = New System.Drawing.Font("Consolas", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Equalation1.ForeColor = System.Drawing.SystemColors.Control
         Me.Equalation1.Location = New System.Drawing.Point(636, 50)
         Me.Equalation1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Equalation1.Name = "Equalation1"
@@ -130,7 +162,7 @@ Partial Class Form1
         Me.Result1.Location = New System.Drawing.Point(680, 45)
         Me.Result1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Result1.Name = "Result1"
-        Me.Result1.Size = New System.Drawing.Size(269, 38)
+        Me.Result1.Size = New System.Drawing.Size(263, 38)
         Me.Result1.TabIndex = 4
         Me.Result1.Text = "result"
         Me.Result1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -175,8 +207,9 @@ Partial Class Form1
         '
         'NormalOperation
         '
-        Me.NormalOperation.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.NormalOperation.BackColor = System.Drawing.Color.Brown
         Me.NormalOperation.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NormalOperation.ForeColor = System.Drawing.SystemColors.Control
         Me.NormalOperation.Location = New System.Drawing.Point(4, 3)
         Me.NormalOperation.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.NormalOperation.Name = "NormalOperation"
@@ -211,8 +244,8 @@ Partial Class Form1
         '
         'NormalOpearationBG
         '
-        Me.NormalOpearationBG.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.NormalOpearationBG.Location = New System.Drawing.Point(2, 3)
+        Me.NormalOpearationBG.BackColor = System.Drawing.Color.Brown
+        Me.NormalOpearationBG.Location = New System.Drawing.Point(4, 3)
         Me.NormalOpearationBG.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.NormalOpearationBG.Name = "NormalOpearationBG"
         Me.NormalOpearationBG.Size = New System.Drawing.Size(960, 111)
@@ -430,7 +463,7 @@ Partial Class Form1
         Me.NumberRandomiser.AutoSize = True
         Me.NumberRandomiser.BackColor = System.Drawing.Color.Indigo
         Me.NumberRandomiser.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.NumberRandomiser.Location = New System.Drawing.Point(76, 489)
+        Me.NumberRandomiser.Location = New System.Drawing.Point(86, 489)
         Me.NumberRandomiser.Name = "NumberRandomiser"
         Me.NumberRandomiser.Size = New System.Drawing.Size(140, 22)
         Me.NumberRandomiser.TabIndex = 30
@@ -442,7 +475,7 @@ Partial Class Form1
         Me.RndDisplay.BackColor = System.Drawing.Color.Black
         Me.RndDisplay.Font = New System.Drawing.Font("Consolas", 22.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RndDisplay.ForeColor = System.Drawing.SystemColors.Control
-        Me.RndDisplay.Location = New System.Drawing.Point(80, 520)
+        Me.RndDisplay.Location = New System.Drawing.Point(90, 520)
         Me.RndDisplay.Name = "RndDisplay"
         Me.RndDisplay.Size = New System.Drawing.Size(127, 117)
         Me.RndDisplay.TabIndex = 31
@@ -451,7 +484,7 @@ Partial Class Form1
         '
         'RndBtn
         '
-        Me.RndBtn.Location = New System.Drawing.Point(97, 655)
+        Me.RndBtn.Location = New System.Drawing.Point(107, 655)
         Me.RndBtn.Name = "RndBtn"
         Me.RndBtn.Size = New System.Drawing.Size(90, 36)
         Me.RndBtn.TabIndex = 32
@@ -639,34 +672,369 @@ Partial Class Form1
         'RandomBG
         '
         Me.RandomBG.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.RandomBG.Location = New System.Drawing.Point(5, 446)
+        Me.RandomBG.Location = New System.Drawing.Point(15, 447)
         Me.RandomBG.Name = "RandomBG"
-        Me.RandomBG.Size = New System.Drawing.Size(285, 293)
+        Me.RandomBG.Size = New System.Drawing.Size(285, 281)
         Me.RandomBG.TabIndex = 51
         '
         'RandomBG2
         '
         Me.RandomBG2.BackColor = System.Drawing.Color.Purple
-        Me.RandomBG2.Location = New System.Drawing.Point(-2, 440)
+        Me.RandomBG2.Location = New System.Drawing.Point(9, 439)
         Me.RandomBG2.Name = "RandomBG2"
-        Me.RandomBG2.Size = New System.Drawing.Size(297, 306)
+        Me.RandomBG2.Size = New System.Drawing.Size(297, 297)
         Me.RandomBG2.TabIndex = 53
         '
         'NormalOperationBG2
         '
-        Me.NormalOperationBG2.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.NormalOperationBG2.Location = New System.Drawing.Point(-7, -13)
+        Me.NormalOperationBG2.BackColor = System.Drawing.Color.LightCoral
+        Me.NormalOperationBG2.Location = New System.Drawing.Point(-4, -13)
         Me.NormalOperationBG2.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.NormalOperationBG2.Name = "NormalOperationBG2"
-        Me.NormalOperationBG2.Size = New System.Drawing.Size(975, 130)
+        Me.NormalOperationBG2.Size = New System.Drawing.Size(966, 130)
         Me.NormalOperationBG2.TabIndex = 54
+        '
+        'FormatBG2
+        '
+        Me.FormatBG2.BackColor = System.Drawing.Color.Maroon
+        Me.FormatBG2.Location = New System.Drawing.Point(970, -13)
+        Me.FormatBG2.Name = "FormatBG2"
+        Me.FormatBG2.Size = New System.Drawing.Size(353, 760)
+        Me.FormatBG2.TabIndex = 55
+        '
+        'FormatBG1
+        '
+        Me.FormatBG1.BackColor = System.Drawing.Color.LightCoral
+        Me.FormatBG1.Location = New System.Drawing.Point(958, -13)
+        Me.FormatBG1.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.FormatBG1.Name = "FormatBG1"
+        Me.FormatBG1.Size = New System.Drawing.Size(51, 760)
+        Me.FormatBG1.TabIndex = 56
+        '
+        'FormatBG3
+        '
+        Me.FormatBG3.BackColor = System.Drawing.Color.IndianRed
+        Me.FormatBG3.Location = New System.Drawing.Point(974, -13)
+        Me.FormatBG3.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.FormatBG3.Name = "FormatBG3"
+        Me.FormatBG3.Size = New System.Drawing.Size(349, 54)
+        Me.FormatBG3.TabIndex = 57
+        '
+        'FormatLabel
+        '
+        Me.FormatLabel.AutoSize = True
+        Me.FormatLabel.BackColor = System.Drawing.Color.IndianRed
+        Me.FormatLabel.Font = New System.Drawing.Font("Consolas", 16.0!)
+        Me.FormatLabel.ForeColor = System.Drawing.SystemColors.Control
+        Me.FormatLabel.Location = New System.Drawing.Point(1126, 3)
+        Me.FormatLabel.Name = "FormatLabel"
+        Me.FormatLabel.Size = New System.Drawing.Size(104, 32)
+        Me.FormatLabel.TabIndex = 58
+        Me.FormatLabel.Text = "Format"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Maroon
+        Me.Label2.Font = New System.Drawing.Font("Consolas", 14.0!)
+        Me.Label2.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label2.Location = New System.Drawing.Point(1128, 52)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(90, 28)
+        Me.Label2.TabIndex = 59
+        Me.Label2.Text = "Number"
+        '
+        'FormatNumInput
+        '
+        Me.FormatNumInput.Location = New System.Drawing.Point(1022, 89)
+        Me.FormatNumInput.Name = "FormatNumInput"
+        Me.FormatNumInput.Size = New System.Drawing.Size(288, 29)
+        Me.FormatNumInput.TabIndex = 60
+        Me.FormatNumInput.Text = "number"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Maroon
+        Me.Label3.Font = New System.Drawing.Font("Consolas", 14.0!)
+        Me.Label3.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label3.Location = New System.Drawing.Point(1017, 239)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(103, 28)
+        Me.Label3.TabIndex = 61
+        Me.Label3.Text = "percent"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Maroon
+        Me.Label4.Font = New System.Drawing.Font("Consolas", 14.0!)
+        Me.Label4.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label4.Location = New System.Drawing.Point(1017, 211)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(116, 28)
+        Me.Label4.TabIndex = 62
+        Me.Label4.Text = "currency"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Maroon
+        Me.Label5.Font = New System.Drawing.Font("Consolas", 14.0!)
+        Me.Label5.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label5.Location = New System.Drawing.Point(1017, 183)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(116, 28)
+        Me.Label5.TabIndex = 63
+        Me.Label5.Text = "standard"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Maroon
+        Me.Label6.Font = New System.Drawing.Font("Consolas", 14.0!)
+        Me.Label6.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label6.Location = New System.Drawing.Point(1017, 155)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(77, 28)
+        Me.Label6.TabIndex = 64
+        Me.Label6.Text = "fixed"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Maroon
+        Me.Label7.Font = New System.Drawing.Font("Consolas", 14.0!)
+        Me.Label7.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label7.Location = New System.Drawing.Point(1017, 127)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(103, 28)
+        Me.Label7.TabIndex = 65
+        Me.Label7.Text = "general"
+        '
+        'gnum
+        '
+        Me.gnum.Location = New System.Drawing.Point(1138, 127)
+        Me.gnum.Name = "gnum"
+        Me.gnum.Size = New System.Drawing.Size(172, 22)
+        Me.gnum.TabIndex = 66
+        Me.gnum.Text = "value"
+        '
+        'pnum
+        '
+        Me.pnum.Location = New System.Drawing.Point(1138, 245)
+        Me.pnum.Name = "pnum"
+        Me.pnum.Size = New System.Drawing.Size(172, 22)
+        Me.pnum.TabIndex = 68
+        Me.pnum.Text = "value"
+        '
+        'cnum
+        '
+        Me.cnum.Location = New System.Drawing.Point(1138, 215)
+        Me.cnum.Name = "cnum"
+        Me.cnum.Size = New System.Drawing.Size(172, 22)
+        Me.cnum.TabIndex = 69
+        Me.cnum.Text = "value"
+        '
+        'snum
+        '
+        Me.snum.Location = New System.Drawing.Point(1138, 186)
+        Me.snum.Name = "snum"
+        Me.snum.Size = New System.Drawing.Size(172, 22)
+        Me.snum.TabIndex = 70
+        Me.snum.Text = "value"
+        '
+        'fnum
+        '
+        Me.fnum.Location = New System.Drawing.Point(1138, 157)
+        Me.fnum.Name = "fnum"
+        Me.fnum.Size = New System.Drawing.Size(172, 22)
+        Me.fnum.TabIndex = 71
+        Me.fnum.Text = "value"
+        '
+        'FormatNum
+        '
+        Me.FormatNum.Location = New System.Drawing.Point(1035, 281)
+        Me.FormatNum.Name = "FormatNum"
+        Me.FormatNum.Size = New System.Drawing.Size(98, 46)
+        Me.FormatNum.TabIndex = 72
+        Me.FormatNum.Text = "Format"
+        Me.FormatNum.UseVisualStyleBackColor = True
+        '
+        'ClearNum
+        '
+        Me.ClearNum.Location = New System.Drawing.Point(1190, 281)
+        Me.ClearNum.Name = "ClearNum"
+        Me.ClearNum.Size = New System.Drawing.Size(98, 46)
+        Me.ClearNum.TabIndex = 73
+        Me.ClearNum.Text = "Clear"
+        Me.ClearNum.UseVisualStyleBackColor = True
+        '
+        'DateLabel
+        '
+        Me.DateLabel.AutoSize = True
+        Me.DateLabel.BackColor = System.Drawing.Color.Maroon
+        Me.DateLabel.Font = New System.Drawing.Font("Consolas", 14.0!)
+        Me.DateLabel.ForeColor = System.Drawing.SystemColors.Control
+        Me.DateLabel.Location = New System.Drawing.Point(1127, 399)
+        Me.DateLabel.Name = "DateLabel"
+        Me.DateLabel.Size = New System.Drawing.Size(64, 28)
+        Me.DateLabel.TabIndex = 74
+        Me.DateLabel.Text = "Date"
+        '
+        'ldate
+        '
+        Me.ldate.Location = New System.Drawing.Point(1018, 501)
+        Me.ldate.Name = "ldate"
+        Me.ldate.Size = New System.Drawing.Size(292, 22)
+        Me.ldate.TabIndex = 84
+        Me.ldate.Text = "value"
+        '
+        'sdate
+        '
+        Me.sdate.Location = New System.Drawing.Point(1153, 531)
+        Me.sdate.Name = "sdate"
+        Me.sdate.Size = New System.Drawing.Size(157, 22)
+        Me.sdate.TabIndex = 83
+        Me.sdate.Text = "value"
+        '
+        'ltime
+        '
+        Me.ltime.Location = New System.Drawing.Point(1153, 560)
+        Me.ltime.Name = "ltime"
+        Me.ltime.Size = New System.Drawing.Size(157, 22)
+        Me.ltime.TabIndex = 82
+        Me.ltime.Text = "value"
+        '
+        'stime
+        '
+        Me.stime.Location = New System.Drawing.Point(1153, 587)
+        Me.stime.Name = "stime"
+        Me.stime.Size = New System.Drawing.Size(157, 22)
+        Me.stime.TabIndex = 81
+        Me.stime.Text = "value"
+        '
+        'gdate
+        '
+        Me.gdate.Location = New System.Drawing.Point(1153, 447)
+        Me.gdate.Name = "gdate"
+        Me.gdate.Size = New System.Drawing.Size(157, 22)
+        Me.gdate.TabIndex = 80
+        Me.gdate.Text = "value"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.BackColor = System.Drawing.Color.Maroon
+        Me.Label13.Font = New System.Drawing.Font("Consolas", 11.0!)
+        Me.Label13.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label13.Location = New System.Drawing.Point(1017, 447)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(130, 22)
+        Me.Label13.TabIndex = 79
+        Me.Label13.Text = "general date"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.BackColor = System.Drawing.Color.Maroon
+        Me.Label14.Font = New System.Drawing.Font("Consolas", 11.0!)
+        Me.Label14.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label14.Location = New System.Drawing.Point(1108, 476)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(100, 22)
+        Me.Label14.TabIndex = 78
+        Me.Label14.Text = "long date"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.BackColor = System.Drawing.Color.Maroon
+        Me.Label15.Font = New System.Drawing.Font("Consolas", 11.0!)
+        Me.Label15.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label15.Location = New System.Drawing.Point(1017, 531)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(110, 22)
+        Me.Label15.TabIndex = 77
+        Me.Label15.Text = "short date"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.BackColor = System.Drawing.Color.Maroon
+        Me.Label16.Font = New System.Drawing.Font("Consolas", 11.0!)
+        Me.Label16.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label16.Location = New System.Drawing.Point(1017, 559)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(100, 22)
+        Me.Label16.TabIndex = 76
+        Me.Label16.Text = "long time"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.BackColor = System.Drawing.Color.Maroon
+        Me.Label17.Font = New System.Drawing.Font("Consolas", 11.0!)
+        Me.Label17.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label17.Location = New System.Drawing.Point(1017, 587)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(110, 22)
+        Me.Label17.TabIndex = 75
+        Me.Label17.Text = "short time"
+        '
+        'DisplayDate
+        '
+        Me.DisplayDate.Location = New System.Drawing.Point(1035, 642)
+        Me.DisplayDate.Name = "DisplayDate"
+        Me.DisplayDate.Size = New System.Drawing.Size(98, 46)
+        Me.DisplayDate.TabIndex = 85
+        Me.DisplayDate.Text = "Display"
+        Me.DisplayDate.UseVisualStyleBackColor = True
+        '
+        'ClearDate
+        '
+        Me.ClearDate.Location = New System.Drawing.Point(1190, 642)
+        Me.ClearDate.Name = "ClearDate"
+        Me.ClearDate.Size = New System.Drawing.Size(98, 46)
+        Me.ClearDate.TabIndex = 86
+        Me.ClearDate.Text = "Clear"
+        Me.ClearDate.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 22.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(219, Byte), Integer), CType(CType(230, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(966, 745)
+        Me.ClientSize = New System.Drawing.Size(1322, 745)
+        Me.Controls.Add(Me.ClearDate)
+        Me.Controls.Add(Me.DisplayDate)
+        Me.Controls.Add(Me.ldate)
+        Me.Controls.Add(Me.sdate)
+        Me.Controls.Add(Me.ltime)
+        Me.Controls.Add(Me.stime)
+        Me.Controls.Add(Me.gdate)
+        Me.Controls.Add(Me.Label13)
+        Me.Controls.Add(Me.Label14)
+        Me.Controls.Add(Me.Label15)
+        Me.Controls.Add(Me.Label16)
+        Me.Controls.Add(Me.Label17)
+        Me.Controls.Add(Me.DateLabel)
+        Me.Controls.Add(Me.ClearNum)
+        Me.Controls.Add(Me.FormatNum)
+        Me.Controls.Add(Me.fnum)
+        Me.Controls.Add(Me.snum)
+        Me.Controls.Add(Me.cnum)
+        Me.Controls.Add(Me.pnum)
+        Me.Controls.Add(Me.gnum)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.FormatNumInput)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.FormatLabel)
+        Me.Controls.Add(Me.FormatBG1)
         Me.Controls.Add(Me.AtanResult)
         Me.Controls.Add(Me.AcosResult)
         Me.Controls.Add(Me.AsinResult)
@@ -721,6 +1089,8 @@ Partial Class Form1
         Me.Controls.Add(Me.NormalOperationBG2)
         Me.Controls.Add(Me.ExponentialLabel)
         Me.Controls.Add(Me.FixLabel)
+        Me.Controls.Add(Me.FormatBG3)
+        Me.Controls.Add(Me.FormatBG2)
         Me.Font = New System.Drawing.Font("Consolas", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Name = "Form1"
@@ -784,4 +1154,35 @@ Partial Class Form1
     Friend WithEvents RandomBG As Label
     Friend WithEvents RandomBG2 As Label
     Friend WithEvents NormalOperationBG2 As Label
+    Friend WithEvents FormatBG2 As Label
+    Friend WithEvents FormatBG1 As Label
+    Friend WithEvents FormatBG3 As Label
+    Friend WithEvents FormatLabel As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents FormatNumInput As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents gnum As Label
+    Friend WithEvents pnum As Label
+    Friend WithEvents cnum As Label
+    Friend WithEvents snum As Label
+    Friend WithEvents fnum As Label
+    Friend WithEvents FormatNum As Button
+    Friend WithEvents ClearNum As Button
+    Friend WithEvents DateLabel As Label
+    Friend WithEvents ldate As Label
+    Friend WithEvents sdate As Label
+    Friend WithEvents ltime As Label
+    Friend WithEvents stime As Label
+    Friend WithEvents gdate As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Label17 As Label
+    Friend WithEvents DisplayDate As Button
+    Friend WithEvents ClearDate As Button
 End Class

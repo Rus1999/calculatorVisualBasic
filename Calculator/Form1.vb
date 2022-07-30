@@ -176,4 +176,45 @@
     Private Sub AtanInput_Click(sender As Object, e As EventArgs) Handles AtanInput.Click
         AtanInput.Text = ""
     End Sub
+
+    Private Sub FormatNum_Click(sender As Object, e As EventArgs) Handles FormatNum.Click
+        If (FormatNumInput.Text <> "number") Then
+            gnum.Text = Format((Val(FormatNumInput.Text)), "General Number")
+            fnum.Text = Format((Val(FormatNumInput.Text)), "Fixed")
+            snum.Text = Format((Val(FormatNumInput.Text)), "Standard")
+            cnum.Text = Format((Val(FormatNumInput.Text)), "Currency")
+            pnum.Text = Format((Val(FormatNumInput.Text)), "Percent")
+        End If
+    End Sub
+
+    Private Sub FormatNumInput_Click(sender As Object, e As EventArgs) Handles FormatNumInput.Click
+        FormatNumInput.Text = ""
+    End Sub
+
+    Private Sub ClearNum_Click(sender As Object, e As EventArgs) Handles ClearNum.Click
+        gnum.Text = "value"
+        fnum.Text = "value"
+        snum.Text = "value"
+        cnum.Text = "value"
+        pnum.Text = "value"
+        FormatNumInput.Text = "number"
+    End Sub
+
+    Private Sub DisplayDate_Click(sender As Object, e As EventArgs) Handles DisplayDate.Click
+        gdate.Text = Format(Now, "General Date")
+        ldate.Text = Format(Now, "Long Date")
+        sdate.Text = Format(Now, "short Date")
+        ltime.Text = Format(Now, "Long Time")
+        stime.Text = Format(Now, "Short Time")
+    End Sub
+
+    Private Sub ClearDate_Click(sender As Object, e As EventArgs) Handles ClearDate.Click
+        If (gdate.Text <> "value") Then
+            gdate.Text = "value"
+            ldate.Text = "value"
+            sdate.Text = "value"
+            ltime.Text = "value"
+            stime.Text = "value"
+        End If
+    End Sub
 End Class
